@@ -13,4 +13,4 @@ jobs:
       - run: | 
           echo "PR_NUMBER: $PR_NUMBER"
         env:
-          PR_NUMBER: ${steps.pr.outputs.number}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
